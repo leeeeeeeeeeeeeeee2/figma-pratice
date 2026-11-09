@@ -27,7 +27,9 @@
 
   .material-results__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: var(--space-83);
-    width: 88.91%;
+    column-gap: var(--space-51);
+    align-self: flex-start;
+    width: 86.52%;
+    margin-left: 7.86%;
   }
 }

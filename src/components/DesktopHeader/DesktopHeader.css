@@ -1,0 +1,112 @@
+.desktop-header {
+  width: min(100% - 2.5rem, 87.5rem);
+  margin-inline: auto;
+  font-family: var(--font-family-nanum), sans-serif;
+  font-weight: var(--font-weight-light);
+}
+
+.desktop-header__top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-27);
+  min-height: 4.0625rem;
+  padding-inline: var(--space-20);
+  border-bottom: var(--border-width-133) solid var(--color-grey-100);
+}
+
+.desktop-header__org {
+  font-size: var(--font-size-15);
+  color: var(--color-grey-700);
+}
+
+.desktop-header__auth {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  padding: var(--space-6) var(--space-10);
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: var(--font-size-14);
+  color: var(--color-text-main-text-color);
+  cursor: pointer;
+}
+
+.desktop-header__auth-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: var(--radius-15);
+  background: var(--color-login-bg);
+}
+
+.desktop-header__auth-icon img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.desktop-header__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-20);
+  min-height: 5rem;
+  padding-left: var(--space-20);
+  border-top: var(--border-width-133) solid var(--color-grey-100);
+}
+
+.desktop-header__logo {
+  flex: 0 0 auto;
+  display: block;
+}
+
+.desktop-header__logo img {
+  display: block;
+  width: 12.434375rem;
+  height: 2.749375rem;
+}
+
+.desktop-header__right {
+  display: flex;
+  flex: 0 1 59.3125rem;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(var(--space-20), 6.25vw, var(--space-90));
+  min-width: 0;
+}
+
+.desktop-header__nav {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 51.1875rem;
+  min-width: 0;
+}
+
+.desktop-header__nav-item {
+  padding: var(--space-8);
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: var(--font-size-20);
+  color: var(--color-text-primary);
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.desktop-header__menu {
+  flex: 0 0 auto;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.desktop-header__menu img {
+  display: block;
+}

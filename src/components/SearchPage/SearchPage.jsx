@@ -1,3 +1,5 @@
+import PageHeading from '../PageHeading/PageHeading'
+import useIsDesktop from '../../hooks/useIsDesktop'
 import LibrarySearch from '../LibrarySearch/LibrarySearch'
 import MaterialResults from '../MaterialResults/MaterialResults'
 import { MATERIAL_TYPES, SEARCH_RESULTS } from '../../data/sampleData'
@@ -7,6 +9,7 @@ const matches = (book, query, libraries) =>
   book.title.includes(query) && (libraries.length === 0 || libraries.includes(book.libraryName))
 
 function SearchPage({ query, libraries, onSearch, onSelectBook }) {
+  const isDesktop = useIsDesktop()
   const itemsByType = Object.fromEntries(
     Object.entries(SEARCH_RESULTS).map(([type, books]) => [
       type,
@@ -20,6 +23,7 @@ function SearchPage({ query, libraries, onSearch, onSelectBook }) {
 
   return (
     <main className="search-page">
+      {isDesktop && <PageHeading title="자료검색" crumbs={[{ label: '자료검색' }]} />}
       <LibrarySearch
         key={`${query}|${libraries.join()}`}
         defaultQuery={query}

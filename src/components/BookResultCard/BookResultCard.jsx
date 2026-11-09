@@ -1,6 +1,6 @@
 import BookCover from '../BookCover/BookCover'
-import infoIcon from '../../assets/icons/info.png'
 import LoanStatus from '../LoanStatus/LoanStatus'
+import ReservationCount from '../ReservationCount/ReservationCount'
 import EbookLinkButton from '../EbookLinkButton/EbookLinkButton'
 import './BookResultCard.css'
 
@@ -21,6 +21,7 @@ function BookResultCard({
   loanNote,
   reservedCount,
   reservationCapacity,
+  hideLoan = false,
   onSelect,
   onOpenEbook,
 }) {
@@ -83,15 +84,10 @@ function BookResultCard({
 
           {isEbook ? (
             <EbookLinkButton onClick={onOpenEbook} />
-          ) : loanStatus && (
+          ) : loanStatus && !hideLoan && (
             <div className="book-card__loan">
               <LoanStatus type={loanType} label={loanStatus} note={loanNote} />
-              <p className="book-card__reservation">
-                <span className="book-card__reservation-label">예약자수 :</span>
-                <span className="book-card__reserved">{reservedCount}</span>/
-                {reservationCapacity}
-                <img src={infoIcon} alt="" width="16" height="16" />
-              </p>
+              <ReservationCount reserved={reservedCount} capacity={reservationCapacity} />
             </div>
           )}
         </div>

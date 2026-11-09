@@ -152,26 +152,6 @@
   transform: translateY(var(--space-3));
 }
 
-.book-card__reservation-label {
-  font-weight: var(--font-weight-medium);
-}
-
-.book-card__reservation {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding-top: var(--space-9);
-  white-space: nowrap;
-  font-size: var(--font-size-14);
-  font-weight: var(--font-weight-regular);
-  color: var(--color-reservation-text);
-}
-
-.book-card__reserved {
-  margin-left: var(--space-3);
-  color: var(--color-blue-200);
-}
-
 @media (min-width: 1024px) {
   .book-card {
     flex-wrap: nowrap;

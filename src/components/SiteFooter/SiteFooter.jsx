@@ -1,9 +1,10 @@
 import footerLogo from '../../assets/images/footer-logo.png'
 import './SiteFooter.css'
 
-function SiteFooter() {
+/* variant: 'home'은 홈, 'page'는 자료검색·상세 화면 시안의 푸터다. 모바일에서는 모양이 같다. */
+function SiteFooter({ variant = 'page' }) {
   return (
-    <footer className="site-footer">
+    <footer className={`site-footer site-footer--${variant}`}>
       <nav className="site-footer__links" aria-label="약관">
         <a href="#/">개인정보처리방침</a>
         <a href="#/">홈페이지 이용약관</a>

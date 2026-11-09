@@ -1,37 +1,53 @@
 import { useState } from 'react'
 import HomeSectionHeader from '../HomeSectionHeader/HomeSectionHeader'
 import CarouselControls from '../CarouselControls/CarouselControls'
+import CarouselPaging from '../CarouselPaging/CarouselPaging'
 import HomeBookCover from '../HomeBookCover/HomeBookCover'
 import MobileIcon from '../MobileIcon/MobileIcon'
+import useIsDesktop from '../../hooks/useIsDesktop'
 import './NewBooks.css'
 
-const PAGE_SIZE = 3
+const VISIBLE_COUNT = 3
 
 function NewBooks({ books = [], onSelectBook, onMore }) {
-  const [page, setPage] = useState(0)
-  const pageCount = Math.max(Math.ceil(books.length / PAGE_SIZE), 1)
-  const visibleBooks = books.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE)
+  const [index, setIndex] = useState(0)
+  const isDesktop = useIsDesktop()
+  const visibleBooks = Array.from(
+    { length: Math.min(VISIBLE_COUNT, books.length) },
+    (_, offset) => books[(index + offset) % books.length],
+  )
   const featured = visibleBooks[0]
 
-  const move = (step) => setPage((page + step + pageCount) % pageCount)
+  /* 모바일은 3권씩, 데스크톱은 시안의 1 / 12 표시에 맞춰 1권씩 넘긴다. */
+  const move = (direction) => {
+    const step = isDesktop ? 1 : VISIBLE_COUNT
+    setIndex((index + direction * step + books.length) % books.length)
+  }
 
   return (
     <section className="new-books">
       <div className="new-books__top">
-        <HomeSectionHeader title="신착도서" onMore={onMore}>
-          <CarouselControls onPrev={() => move(-1)} onNext={() => move(1)} />
-        </HomeSectionHeader>
+        <div className="new-books__header">
+          <HomeSectionHeader title="신착도서" onMore={onMore}>
+            {isDesktop && <CarouselPaging current={index + 1} total={books.length} />}
+            <CarouselControls onPrev={() => move(-1)} onNext={() => move(1)} />
+          </HomeSectionHeader>
+        </div>
         {featured && (
           <div className="new-books__featured">
-            <HomeBookCover book={featured} size="featured" hasOverlay onSelect={onSelectBook}>
-              <span className="new-books__plus">
-                <MobileIcon name="book-plus" />
-              </span>
-              <span className="new-books__caption">
-                <span className="new-books__caption-title">{featured.title}</span>
-                <span className="new-books__caption-text">{featured.author}</span>
-                <span className="new-books__caption-text">{featured.publisher}</span>
-              </span>
+            <HomeBookCover book={featured} size="featured" hasOverlay={!isDesktop} onSelect={onSelectBook}>
+              {!isDesktop && (
+                <>
+                  <span className="new-books__plus">
+                    <MobileIcon name="book-plus" />
+                  </span>
+                  <span className="new-books__caption">
+                    <span className="new-books__caption-title">{featured.title}</span>
+                    <span className="new-books__caption-text">{featured.author}</span>
+                    <span className="new-books__caption-text">{featured.publisher}</span>
+                  </span>
+                </>
+              )}
             </HomeBookCover>
           </div>
         )}

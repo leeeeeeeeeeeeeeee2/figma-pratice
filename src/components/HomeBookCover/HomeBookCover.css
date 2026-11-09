@@ -64,3 +64,34 @@
   border-right: var(--border-width-133) solid var(--color-book-spine-border);
   background: linear-gradient(to right, var(--color-book-spine-start), var(--color-book-spine-end));
 }
+
+@media (min-width: 1024px) {
+  .home-book--popular {
+    width: 16.4375rem;
+    height: 21.875rem;
+  }
+
+  .home-book--featured {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 364 / 530;
+    border-radius: var(--radius-18) var(--radius-18) var(--radius-22) var(--radius-18);
+    box-shadow: var(--shadow-new-featured);
+    filter: none;
+    overflow: hidden;
+  }
+
+  .home-book--plain {
+    width: 100%;
+    height: 100%;
+  }
+
+  .home-book--plain .book-cover {
+    object-position: left center;
+  }
+
+  .home-book--mini {
+    width: 13.6875rem;
+    height: 18.375rem;
+  }
+}

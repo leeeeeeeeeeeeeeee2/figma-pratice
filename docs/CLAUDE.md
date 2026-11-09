@@ -79,6 +79,7 @@
 - `src/assets/covers/`: 시안의 예시 책표지. 실제 표지는 데이터로 받으며, `placeholder.jpg`만 표지 없음 이미지로 쓴다.
 - `src/assets/sample/`, `src/data/sampleData.js`: 화면 확인용 예시 이미지와 데이터. 백엔드가 정해지면 교체한다.
 - `src/App.jsx`: 주소의 `#` 뒤 값으로 화면을 고른다. `#/` 홈, `#/search` 검색, `#/book/아이디` 상세.
+- `src/hooks/useIsDesktop.js`: 화면 폭이 1024px 이상인지 알려 준다. 모바일과 데스크톱의 구조가 다른 곳에서만 쓰고, 크기·배치 차이는 CSS 미디어쿼리로 처리한다.
 - `src/components/ComponentPreview/`: 컴포넌트 확인용 임시 화면(`#/preview`). 필요 없어지면 제거한다.
 
 ### 화면 범위

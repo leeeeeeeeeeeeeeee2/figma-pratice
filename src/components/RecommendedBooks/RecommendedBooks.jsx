@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import HomeSectionHeader from '../HomeSectionHeader/HomeSectionHeader'
 import CarouselControls from '../CarouselControls/CarouselControls'
+import CarouselPaging from '../CarouselPaging/CarouselPaging'
 import HomeBookCover from '../HomeBookCover/HomeBookCover'
 import './RecommendedBooks.css'
 
@@ -21,11 +22,7 @@ function RecommendedBooks({ books = [], libraryLabel, onSelectBook, onMore }) {
       <div className="recommended__top">
         <div className="recommended__header">
           <HomeSectionHeader title="추천도서" onMore={onMore}>
-            <p className="recommended__paging">
-              <strong>{index + 1}</strong>
-              <span>/</span>
-              <span className="recommended__total">{books.length}</span>
-            </p>
+            <CarouselPaging current={index + 1} total={books.length} />
             <CarouselControls onPrev={() => move(-1)} onNext={() => move(1)} />
           </HomeSectionHeader>
         </div>
@@ -62,7 +59,9 @@ function RecommendedBooks({ books = [], libraryLabel, onSelectBook, onMore }) {
                 </ul>
               )}
               <div className="recommended__intro">
-                <p className="recommended__description">{selected.description}</p>
+                <p className="recommended__description">
+                  <span className="recommended__description-text">{selected.description}</span>
+                </p>
                 <button type="button" className="recommended__intro-button">
                   + 책소개
                 </button>

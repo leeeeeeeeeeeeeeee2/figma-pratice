@@ -16,3 +16,9 @@
   background: none;
   cursor: pointer;
 }
+
+@media (min-width: 1024px) {
+  .carousel-controls {
+    gap: var(--space-16);
+  }
+}

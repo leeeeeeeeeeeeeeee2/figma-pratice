@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 import MobileHeader from './components/MobileHeader/MobileHeader'
+import DesktopHeader from './components/DesktopHeader/DesktopHeader'
+import useIsDesktop from './hooks/useIsDesktop'
 import SiteFooter from './components/SiteFooter/SiteFooter'
 import HomePage from './components/HomePage/HomePage'
 import SearchPage from './components/SearchPage/SearchPage'
@@ -27,6 +29,7 @@ const goToBook = (book) => {
 
 function App() {
   const [route, setRoute] = useState(readRoute)
+  const isDesktop = useIsDesktop()
 
   useEffect(() => {
     const handleChange = () => {
@@ -57,11 +60,13 @@ function App() {
     return <HomePage onSearch={goToSearch} onSelectBook={goToBook} />
   }
 
+  const isHome = route.path === '/'
+
   return (
     <>
-      <MobileHeader />
+      {isDesktop ? <DesktopHeader /> : <MobileHeader />}
       {renderPage()}
-      <SiteFooter />
+      <SiteFooter variant={isHome ? 'home' : 'page'} />
     </>
   )
 }

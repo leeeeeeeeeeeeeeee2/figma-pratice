@@ -16,25 +16,6 @@
   min-width: 0;
 }
 
-.recommended__paging {
-  display: flex;
-  align-items: center;
-  gap: var(--space-15);
-  margin: 0;
-  font-size: var(--font-size-number-light);
-  font-weight: var(--font-weight-light);
-  color: var(--color-text-main-text-color);
-}
-
-.recommended__paging strong {
-  font-weight: var(--font-weight-bold);
-  color: var(--color-grey-800);
-}
-
-.recommended__total {
-  color: var(--color-grey-400);
-}
-
 .recommended__library {
   display: flex;
   align-items: center;
@@ -172,4 +153,142 @@
 
 .recommended__minis::-webkit-scrollbar {
   display: none;
+}
+
+/* 모바일 설명 칸은 시안처럼 두 줄까지만 보여 준다. */
+.recommended__description-text {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+@media (min-width: 1024px) {
+  .recommended {
+    padding: 0;
+    background: none;
+  }
+
+  .recommended__top {
+    flex-wrap: nowrap;
+    gap: var(--space-8);
+    min-height: 2.5rem;
+    margin-bottom: var(--space-20);
+  }
+
+  .recommended .carousel-paging {
+    font-weight: var(--font-weight-bold);
+  }
+
+  .recommended__library {
+    flex: 0 0 11.25rem;
+    padding-left: var(--space-17);
+    background: var(--color-white-900) url('../../assets/icons/mobile/holiday-arrow.png') no-repeat right 9.39% center;
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* 왼쪽 큰 표지(410) : 오른쪽 설명(960) 비율을 유지하며 함께 줄어든다. */
+  .recommended__body {
+    display: grid;
+    grid-template-columns: minmax(0, 410fr) minmax(0, 960fr);
+    grid-template-rows: auto 18.375rem;
+    gap: var(--space-20) var(--space-30);
+    align-items: stretch;
+    margin-bottom: calc(var(--space-4) * -1);
+    padding-bottom: 0;
+    border-radius: 0;
+  }
+
+  .recommended__detail {
+    display: contents;
+  }
+
+  .recommended__detail > .home-book {
+    grid-row: 1 / span 2;
+  }
+
+  .recommended__text {
+    grid-column: 2;
+    grid-row: 1;
+    min-height: 19.981875rem;
+    padding: var(--space-20) var(--space-30) var(--space-30);
+  }
+
+  .recommended__title {
+    margin: 0;
+    font-size: var(--font-size-42);
+    line-height: 3.675rem;
+    color: var(--color-grey-800);
+  }
+
+  .recommended__meta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-24);
+    margin: 0;
+    padding-top: var(--space-10);
+    font-size: var(--font-size-18);
+    line-height: normal;
+  }
+
+  .recommended__meta div {
+    position: relative;
+    gap: var(--space-4);
+  }
+
+  .recommended__meta div + div::before {
+    position: absolute;
+    top: 50%;
+    left: calc(var(--space-13) * -1);
+    width: var(--space-2);
+    height: 0.625rem;
+    background: var(--color-grey-200);
+    transform: translateY(-50%);
+    content: '';
+  }
+
+  .recommended__tags {
+    height: 3.125rem;
+    padding: var(--space-10) 0 0;
+  }
+
+  .recommended__description {
+    position: relative;
+    display: block;
+    min-height: 7.5rem;
+    padding: var(--space-16);
+    font-size: var(--font-size-16);
+  }
+
+  .recommended__description-text {
+    display: block;
+    height: 3.2rem;
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+  }
+
+  .recommended__description::after {
+    position: absolute;
+    top: 3.03125rem;
+    right: var(--space-14);
+    left: var(--space-14);
+    height: var(--space-40);
+    background: linear-gradient(to bottom, var(--color-white-0), var(--color-white-900));
+    content: '';
+  }
+
+  .recommended__intro-button {
+    top: 5.625rem;
+    left: 41.33%;
+  }
+
+  .recommended__minis {
+    grid-column: 2;
+    grid-row: 2;
+    gap: var(--space-28);
+    width: 100%;
+    background: var(--color-recommended-minis);
+  }
 }

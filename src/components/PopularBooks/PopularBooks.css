@@ -17,3 +17,31 @@
 .popular-books__list::-webkit-scrollbar {
   display: none;
 }
+
+/* 모바일 시안은 4권까지만 있다. */
+.popular-books__list > :nth-child(n + 5) {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .popular-books {
+    padding: var(--space-60) var(--space-20) 0;
+  }
+
+  .popular-books__header {
+    padding-bottom: 0;
+  }
+
+  .popular-books__header .home-section-header {
+    min-height: 2.5rem;
+  }
+
+  .popular-books__list {
+    gap: var(--space-30);
+    padding-block: var(--space-20);
+  }
+
+  .popular-books__list > :nth-child(n + 5) {
+    display: block;
+  }
+}

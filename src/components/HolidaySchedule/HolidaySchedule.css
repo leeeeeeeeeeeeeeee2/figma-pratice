@@ -115,3 +115,24 @@
   font-weight: var(--font-weight-regular);
   color: var(--color-text-main-text-color);
 }
+
+@media (min-width: 1024px) {
+  .holiday {
+    padding: 0 0 0 var(--space-30);
+  }
+
+  .holiday .home-section-header {
+    max-width: 33.4375rem;
+    padding-left: var(--space-20);
+    padding-right: var(--space-10);
+  }
+
+  .holiday__month {
+    gap: 0;
+  }
+
+  .holiday__select,
+  .holiday__dates {
+    width: 100%;
+  }
+}

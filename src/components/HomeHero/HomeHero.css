@@ -137,3 +137,160 @@
 .home-hero__nav--next {
   right: 0;
 }
+
+/* 모바일에서는 아이콘 칸 없이 아이콘이 글자 옆에 바로 놓인다. */
+.home-hero__icon {
+  display: contents;
+}
+
+@media (min-width: 1024px) {
+  .home-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-16);
+    min-height: 23.25rem;
+    padding: var(--space-37) 0 0;
+    background-size: 100% 293.13%;
+    overflow: hidden;
+  }
+
+  .home-hero__search {
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--space-20);
+    margin-bottom: 0;
+    filter: drop-shadow(var(--shadow-hero-search));
+  }
+
+  .home-hero__library {
+    flex: 0 0 9.6875rem;
+    justify-content: center;
+    min-height: 3.6875rem;
+    padding: var(--space-8);
+  }
+
+  .home-hero__select {
+    flex: 0 1 auto;
+    padding: 0;
+  }
+
+  .home-hero__field {
+    flex: 0 1 37.624375rem;
+    min-width: 0;
+    min-height: 3.6875rem;
+    padding-inline: var(--space-8);
+  }
+
+  .home-hero__keywords {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-18);
+    min-height: 2.625rem;
+    padding: var(--space-10) 0 0 11.25rem;
+  }
+
+  .home-hero__keywords-title {
+    position: relative;
+    margin: 0;
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-black);
+    white-space: nowrap;
+  }
+
+  .home-hero__star {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    width: 0.993125rem;
+    height: 1.125rem;
+    overflow: hidden;
+    transform: translateY(-50%);
+  }
+
+  .home-hero__star img {
+    display: block;
+    width: 119.57%;
+    height: 100%;
+  }
+
+  .home-hero__keyword-list {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .home-hero__keyword {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    padding: var(--space-4) var(--space-12);
+    border: 0;
+    border-radius: var(--radius-30);
+    background: var(--color-white-900);
+    font-family: inherit;
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-light);
+    color: var(--color-text-main-text-color);
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  /* 시안의 패널은 화면보다 넓어서 좌우 끝이 잘린 채로 보인다. */
+  .home-hero__panel {
+    height: 11.925rem;
+    margin-inline: calc(var(--space-20) * -1);
+  }
+
+  .home-hero__menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 var(--space-30);
+  }
+
+  .home-hero__menu li {
+    flex: 0 0 12rem;
+  }
+
+  .home-hero__item {
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-16);
+    height: 7.5rem;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    font-size: var(--font-size-18);
+    text-align: center;
+  }
+
+  .home-hero__icon {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5.125rem;
+    border: var(--border-width-91) solid var(--color-hero-panel-border);
+    border-radius: var(--radius-20);
+    background: var(--color-hero-panel);
+    box-shadow: var(--shadow-hero-item);
+  }
+
+  .home-hero__nav--prev {
+    left: var(--space-20);
+  }
+
+  .home-hero__nav--next {
+    right: var(--space-20);
+  }
+}

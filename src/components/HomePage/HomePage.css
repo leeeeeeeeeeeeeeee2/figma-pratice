@@ -1,6 +1,22 @@
-/* 데스크톱 홈 시안을 받기 전까지 모바일 시안 폭(738px)을 넘지 않게 가운데 정렬한다. */
+/* 모바일은 시안 폭(738px)을 넘지 않게 가운데 정렬한다. */
 .home-page {
   width: 100%;
   max-width: 46.125rem;
   margin-inline: auto;
+}
+
+@media (min-width: 1024px) {
+  .home-page {
+    width: min(100% - 2.5rem, 87.5rem);
+    max-width: none;
+  }
+
+  /* 시안의 좌우 폭(신착도서 800 : 휴관일 582) 비율을 유지하며 함께 줄어든다. */
+  .home-page__middle {
+    display: grid;
+    grid-template-columns: minmax(0, 800fr) minmax(0, 582fr);
+    column-gap: var(--space-18);
+    align-items: start;
+    padding-block: var(--space-60) 3.875rem;
+  }
 }

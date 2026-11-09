@@ -55,3 +55,94 @@
   margin-top: var(--space-14);
   opacity: 0.7;
 }
+
+@media (min-width: 1024px) {
+  .site-footer {
+    --footer-gutter: max(var(--space-20), calc((100% - 87.5rem) / 2));
+    position: relative;
+    display: block;
+    padding: 0 var(--footer-gutter) var(--space-40);
+    border-top-width: var(--border-width-133);
+    font-family: var(--font-family-pretendard), sans-serif;
+    text-align: left;
+  }
+
+  .site-footer__links {
+    justify-content: flex-start;
+    gap: var(--space-33);
+    min-height: 4.25rem;
+    border-bottom-width: var(--border-width-133);
+  }
+
+  .site-footer__address {
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: var(--space-12);
+    margin: 0;
+    padding: var(--space-12) 0 0;
+    font-size: var(--font-size-16);
+    line-height: normal;
+  }
+
+  .site-footer__address span:first-child {
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-medium);
+  }
+
+  .site-footer__copyright {
+    padding: var(--space-15) 0 0;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .site-footer__logo {
+    position: absolute;
+    top: 5.90625rem;
+    right: var(--footer-gutter);
+    width: 12.4375rem;
+    height: 2.875rem;
+    margin: 0;
+  }
+
+  .site-footer--home {
+    width: min(100% - 2.5rem, 87.5rem);
+    margin-inline: auto;
+    padding: 0 0 var(--space-38) var(--space-5);
+    border-top: 0;
+    font-family: var(--font-family-nanum), sans-serif;
+    font-weight: var(--font-weight-light);
+  }
+
+  .site-footer--home .site-footer__links {
+    gap: var(--space-34);
+    min-height: 4.1875rem;
+  }
+
+  .site-footer--home .site-footer__links a {
+    opacity: 1;
+  }
+
+  .site-footer--home .site-footer__address {
+    gap: var(--space-20);
+    padding-top: var(--space-13);
+    font-size: var(--font-size-15);
+    line-height: 1.0625rem;
+    opacity: 1;
+  }
+
+  .site-footer--home .site-footer__address span:first-child {
+    font-size: var(--font-size-15);
+    font-weight: inherit;
+  }
+
+  .site-footer--home .site-footer__copyright {
+    font-weight: var(--font-weight-regular);
+    line-height: var(--space-14);
+    opacity: 1;
+  }
+
+  .site-footer--home .site-footer__logo {
+    top: 5.8125rem;
+    right: var(--space-10);
+  }
+}

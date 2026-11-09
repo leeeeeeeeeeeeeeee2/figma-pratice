@@ -179,4 +179,31 @@
   --shadow-search-panel: 0.625rem 0.625rem 0.625rem 0 rgba(0, 0, 0, 0.03);
   --shadow-detail-panel: 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.03); /* drop-shadow용 */
   --shadow-book-cover: 0 0.1875rem 0.15625rem rgba(19, 51, 81, 0.15); /* drop-shadow용 */
+
+  /* 데스크톱 화면 (node 420:15077) */
+  --color-white-0: rgba(255, 255, 255, 0);
+  --color-login-bg: #ecf3ff; /* Figma: login */
+  --color-breadcrumb: #7a7a7a;
+  --color-recommended-minis: #f5f5f5;
+
+  --font-size-42: 2.625rem;
+
+  --space-18: 1.125rem;
+  --space-26: 1.625rem;
+  --space-27: 1.6875rem;
+  --space-33: 2.0625rem;
+  --space-34: 2.125rem;
+  --space-37: 2.3125rem;
+  --space-51: 3.1875rem;
+  --space-60: 3.75rem;
+
+  --border-width-91: 0.056875rem;
+  --border-width-300: 0.1875rem;
+
+  --radius-18: 1.125rem;
+  --radius-22: 1.375rem;
+
+  --shadow-hero-search: 0 0 0.25rem rgba(45, 62, 89, 0.4); /* drop-shadow용 */
+  --shadow-new-featured: -0.25rem -0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25), 0.25rem 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+  --shadow-detail-intro: 0 0.625rem 0.625rem 0 rgba(0, 0, 0, 0.04);
 }
