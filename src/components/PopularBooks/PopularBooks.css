@@ -1,0 +1,19 @@
+.popular-books {
+  padding: var(--space-40) var(--space-10) var(--space-10);
+}
+
+.popular-books__header {
+  padding-bottom: var(--space-10);
+}
+
+.popular-books__list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-29);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.popular-books__list::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,9 @@
+.desktop-icon {
+  display: block;
+  flex: 0 0 auto;
+}
+
+.desktop-icon--logo {
+  width: 12.432rem;
+  height: auto;
+}

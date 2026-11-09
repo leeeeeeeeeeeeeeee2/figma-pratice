@@ -1,0 +1,32 @@
+.book-info-tabs {
+  width: 100%;
+  background: var(--color-white-900);
+  font-family: var(--font-family-pretendard), sans-serif;
+}
+
+.book-info-tabs__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: var(--space-20);
+  min-height: 3.125rem;
+  padding-inline: var(--space-20);
+  border-bottom: var(--border-width-133) solid var(--color-grey-200);
+}
+
+.book-info-tabs__panel {
+  padding-top: var(--space-15);
+}
+
+.book-info-tabs__panel:has(.related-books),
+.book-info-tabs__panel:has(.book-stats) {
+  padding-top: 0;
+}
+
+@media (min-width: 1024px) {
+  .book-info-tabs__list {
+    flex-wrap: nowrap;
+    height: 3.125rem;
+    column-gap: var(--space-54);
+  }
+}

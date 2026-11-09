@@ -1,0 +1,182 @@
+/*
+ * 디자인 토큰
+ * 출처: Figma 모바일 화면 변수 (node 531:15982), 완성본컴포넌트 (node 420:20463)
+ * rem = Figma px / 16
+ * 새 값이 필요하면 임의로 추가하지 말고 먼저 확인한다.
+ */
+
+:root {
+  /* 색상: white */
+  --color-white-900: #ffffff;
+  --color-white-100: #f7f7f7;
+  --color-white-50: #f8f8f8;
+
+  /* 색상: grey */
+  --color-grey-800: #222222;
+  --color-grey-700: #333333;
+  --color-grey-400: #777777;
+  --color-grey-300: #989898;
+  --color-grey-200: #dddddd;
+  --color-grey-100: #eeeeee;
+  --color-grey-50: #f1f1f1;
+  --color-grey-10: #f2f2f2;
+
+  /* 색상: blue */
+  --color-blue-900: #252c41;
+  --color-blue-10: #f0f3f9;
+
+  /* 색상: text */
+  --color-text-main-color: #3c4669;
+  --color-text-main-text-color: #555555;
+
+  /* 폰트 */
+  --font-family-base: 'NanumSquare';
+
+  --font-weight-light: 300;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* 글자 크기: rem = Figma px / 16 */
+  --font-size-main-title: 2rem; /* 메인/TLTLE 32, ExtraBold */
+  --font-size-main-more: 0.875rem; /* 메인/더보기 14, Bold */
+  --font-size-main-hash: 0.875rem; /* 메인/# 14, Light */
+  --font-size-new-book-title: 1.25rem; /* 메인/신착도서TLTLE 20, ExtraBold */
+  --font-size-new-book-second: 0.9375rem; /* 메인/신착도서세컨드 15, Light */
+  --font-size-number-strong: 1.125rem; /* 메인/진한숫자 18, Bold */
+  --font-size-number-light: 1.125rem; /* 메인/연한숫자 18, Light */
+
+  /* 완성본컴포넌트: 색상 */
+  --color-black: #000000;
+  --color-grey-900: #111111;
+  --color-grey-600: #444444;
+  --color-grey-350: #767676;
+  --color-blue-200: #083b82;
+  --color-text-primary: #444444;
+  --color-search-blue: #3241b9; /* Figma: 자료검색블루 */
+  --color-search-title: #df0043; /* Figma: 자료검색제목 */
+  --color-tab-inactive-text: #888888;
+  --color-empty-text: #858585;
+  --color-form-border: #eaeaea;
+  --color-reservation-text: #525252;
+  --color-login-border: #cccccc;
+  --color-loan-available: #5350ff;
+  --color-book-spine-start: rgba(0, 0, 0, 0);
+  --color-book-spine-end: rgba(0, 0, 0, 0.05);
+  --color-book-spine-border: rgba(0, 0, 0, 0.1);
+
+  /* 모바일 홈 (node 531:15982) */
+  --color-hero-panel: rgba(255, 255, 255, 0.25);
+  --color-hero-panel-border: rgba(255, 255, 255, 0.5);
+  --color-hero-search: rgba(255, 255, 255, 0.7);
+  --color-banner-control: rgba(255, 255, 255, 0.8);
+  --color-footer-line: rgba(255, 255, 255, 0.1);
+  --color-book-overlay-start: rgba(9, 36, 62, 0);
+  --color-book-overlay-end: #09243e;
+
+  --space-6: 0.375rem;
+  --space-12: 0.75rem;
+  --space-17: 1.0625rem;
+  --space-21: 1.3125rem;
+  --space-22: 1.375rem;
+  --space-24: 1.5rem;
+  --space-25: 1.5625rem;
+  --space-90: 5.625rem;
+  --space-28: 1.75rem;
+  --space-29: 1.8125rem;
+  --space-31: 1.9375rem;
+  --space-50: 3.125rem;
+
+  --radius-9: 0.5625rem;
+  --radius-12: 0.75875rem;
+  --radius-13: 0.8125rem;
+  --radius-14: 0.875rem;
+  --radius-15: 0.9375rem;
+  --radius-19: 1.2rem;
+  --radius-25: 1.5625rem;
+  --radius-26: 1.625rem;
+  --radius-30: 1.875rem;
+  --radius-pill: 6.1875rem;
+
+  --shadow-hero-panel: 0 0.25rem 0.75rem 0 rgba(0, 0, 0, 0.12);
+  --shadow-hero-item: 0 0.25rem 0.75rem 0 rgba(0, 0, 0, 0.1);
+  --shadow-new-cover: 0 0.1875rem 0.3125rem 0 rgba(19, 51, 81, 0.15);
+  --shadow-featured-a: 0.25rem 0.25rem 0.125rem rgba(0, 0, 0, 0.25); /* drop-shadow용 */
+  --shadow-featured-b: -0.25rem -0.25rem 0.125rem rgba(0, 0, 0, 0.25); /* drop-shadow용 */
+  --shadow-intro-button: 0.1875rem 0.3125rem 0.46875rem rgba(19, 51, 81, 0.15); /* drop-shadow용 */
+
+  /* 완성본컴포넌트: 도서관별 색상 (시안에서 확인된 도서관만) */
+  --color-library-hanareum: #9d3b06;
+  --color-library-seosuwon: #158aac;
+  --color-library-seosuwon-holding: #15888a;
+  --color-library-taejangmaru: #3d8619;
+  --color-library-daechugol: #ef5e77;
+  --color-library-seongyeong: #1580d8;
+  --color-library-seongyeong-ebook: #3578cb;
+  --color-library-hallim: #6e442b;
+  --color-library-sarangsaem: #0046af;
+
+  /* 완성본컴포넌트: 폰트 */
+  --font-family-pretendard: 'Pretendard GOV';
+  --font-family-nanum: 'NanumSquare';
+  --font-family-elice: 'elice';
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  --font-size-10: 0.625rem;
+  --font-size-12: 0.75rem;
+  --font-size-13: 0.8125rem;
+  --font-size-14: 0.875rem;
+  --font-size-15: 0.9375rem;
+  --font-size-16: 1rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-22: 1.375rem;
+  --font-size-24: 1.5rem;
+
+  /* 완성본컴포넌트: 간격 (이름의 숫자 = Figma px) */
+  --space-2: 0.125rem;
+  --space-3: 0.1875rem;
+  --space-4: 0.25rem;
+  --space-5: 0.3125rem;
+  --space-7: 0.4375rem;
+  --space-8: 0.5rem;
+  --space-9: 0.5625rem;
+  --space-10: 0.625rem;
+  --space-11: 0.6875rem;
+  --space-13: 0.8125rem;
+  --space-14: 0.875rem;
+  --space-15: 0.9375rem;
+  --space-16: 1rem;
+  --space-20: 1.25rem;
+  --space-30: 1.875rem;
+  --space-35: 2.1875rem;
+  --space-38: 2.375rem;
+  --space-40: 2.5rem;
+  --space-52: 3.25rem;
+  --space-54: 3.375rem;
+  --space-57: 3.5625rem;
+  --space-83: 5.1875rem;
+  --space-100: 6.25rem;
+  --space-106: 6.625rem;
+
+  /* 완성본컴포넌트: 테두리 두께 */
+  --border-width-1: 0.0625rem;
+  --border-width-133: 0.083125rem;
+  --border-width-150: 0.09375rem;
+  --border-width-250: 0.15625rem;
+
+  /* 완성본컴포넌트: 라운드 */
+  --radius-5: 0.3125rem;
+  --radius-6: 0.38rem;
+  --radius-10: 0.625rem;
+  --radius-20: 1.25rem;
+  --radius-35: 2.1875rem;
+
+  /* 완성본컴포넌트: 그림자 */
+  --shadow-holding-header: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.04);
+  --shadow-search-panel: 0.625rem 0.625rem 0.625rem 0 rgba(0, 0, 0, 0.03);
+  --shadow-detail-panel: 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.03); /* drop-shadow용 */
+  --shadow-book-cover: 0 0.1875rem 0.15625rem rgba(19, 51, 81, 0.15); /* drop-shadow용 */
+}

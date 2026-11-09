@@ -1,0 +1,19 @@
+.info-tab-button {
+  height: 2.5rem;
+  padding: var(--space-8) 0;
+  border: 0;
+  border-bottom: var(--border-width-133) solid transparent;
+  background: none;
+  font-family: var(--font-family-pretendard), sans-serif;
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-black);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.info-tab-button:hover,
+.info-tab-button.is-active {
+  height: 3.1875rem;
+  border-bottom-color: var(--color-grey-350);
+}

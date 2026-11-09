@@ -1,0 +1,12 @@
+.material-tabs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-10);
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .material-tabs {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

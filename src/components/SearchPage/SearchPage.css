@@ -1,0 +1,9 @@
+.search-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-40);
+  width: 100%;
+  max-width: 87.5rem;
+  margin-inline: auto;
+  padding: var(--space-20) var(--space-10) var(--space-50);
+}

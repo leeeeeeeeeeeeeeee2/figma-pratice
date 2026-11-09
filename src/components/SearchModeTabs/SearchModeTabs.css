@@ -1,0 +1,16 @@
+.search-mode-tabs {
+  display: flex;
+  gap: var(--space-10);
+  width: 100%;
+}
+
+.search-mode-tabs .search-mode-button {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+@media (min-width: 1024px) {
+  .search-mode-tabs {
+    width: 99.57%;
+  }
+}

@@ -1,0 +1,66 @@
+.home-book {
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0 var(--radius-12) var(--radius-12) 0;
+  background: var(--color-white-100);
+  cursor: pointer;
+}
+
+.home-book .book-cover {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.home-book--popular {
+  width: 12rem;
+  height: 16.75rem;
+  filter: drop-shadow(var(--shadow-book-cover));
+}
+
+.home-book--featured {
+  width: 13.125rem;
+  height: 18.375rem;
+  filter: drop-shadow(var(--shadow-featured-a)) drop-shadow(var(--shadow-featured-b));
+}
+
+.home-book--plain {
+  width: 13.125rem;
+  height: 18.375rem;
+  border-radius: 0;
+}
+
+.home-book--mini {
+  width: 9rem;
+  height: 12.62375rem;
+  border-radius: 0;
+}
+
+.home-book--list {
+  width: 6.9375rem;
+  height: 9.8125rem;
+  border: solid var(--color-black);
+  border-width: var(--border-width-1) var(--border-width-1) var(--border-width-1) 0;
+  border-radius: 0 var(--radius-13) var(--radius-13) 0;
+  box-shadow: var(--shadow-new-cover);
+}
+
+.home-book__overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, var(--color-book-overlay-start) 27%, var(--color-book-overlay-end));
+}
+
+.home-book__spine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0.6875rem;
+  border-right: var(--border-width-133) solid var(--color-book-spine-border);
+  background: linear-gradient(to right, var(--color-book-spine-start), var(--color-book-spine-end));
+}

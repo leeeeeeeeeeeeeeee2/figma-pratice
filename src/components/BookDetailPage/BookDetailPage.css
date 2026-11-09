@@ -1,0 +1,16 @@
+.book-detail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-40);
+  width: 100%;
+  max-width: 87.5rem;
+  margin-inline: auto;
+  padding: var(--space-20) var(--space-10) var(--space-50);
+}
+
+.book-detail__missing {
+  margin: 0;
+  font-family: var(--font-family-pretendard), sans-serif;
+  font-size: var(--font-size-16);
+  color: var(--color-text-main-text-color);
+}

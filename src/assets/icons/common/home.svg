@@ -1,0 +1,15 @@
+<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="&#235;&#141;&#176;&#236;&#138;&#164;&#237;&#129;&#172;&#237;&#131;&#145;&#236;&#149;&#132;&#236;&#157;&#180;&#236;&#189;&#152;&#236;&#132;&#185;&#236;&#133;&#152;">
+<path d="M-71 -181V-180H720V-181V-182H-71V-181ZM722 -179H721V310H722H723V-179H722ZM720 312V311H-71V312V313H720V312ZM-73 310H-72V-179H-73H-74V310H-73ZM-71 312V311C-71.5523 311 -72 310.552 -72 310H-73H-74C-74 311.657 -72.6568 313 -71 313V312ZM722 310H721C721 310.552 720.552 311 720 311V312V313C721.657 313 723 311.657 723 310H722ZM720 -181V-180C720.552 -180 721 -179.552 721 -179H722H723C723 -180.657 721.657 -182 720 -182V-181ZM-71 -181V-182C-72.6569 -182 -74 -180.657 -74 -179H-73H-72C-72 -179.552 -71.5523 -180 -71 -180V-181Z" fill="black" fill-opacity="0.1"/>
+<g id="&#236;&#158;&#144;&#235;&#163;&#140;&#234;&#178;&#128;&#236;&#131;&#137;&#237;&#153;&#136;&#236;&#149;&#132;&#236;&#157;&#180;&#236;&#189;&#152;">
+<rect x="0.5" y="0.5" width="34" height="34" rx="17" stroke="#DDDDDD"/>
+<rect id="imgi_2_ico_location_home 1" x="10" y="11" width="15" height="15" fill="url(#pattern0_252_3119)"/>
+</g>
+</g>
+<defs>
+<pattern id="pattern0_252_3119" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_252_3119" transform="scale(0.0666667)"/>
+</pattern>
+<image id="image0_252_3119" data-name="imgi_2_ico_location_home.png" width="15" height="15" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAA/klEQVR4AYyT2xGCMBBFMxn+pQTsQDvQEhgasgTpQL75SAm0oBVACVQAnsuElwbR2evuJnuWbBis2fg5506oRqeNEhOEPVABNajyOeHavmBfWHVdl6dpeqU8R8EGK3gJZll2AzI0kA82mOAQKFjaajDAv0DBUqiBHUEKHuNRiYOmBn3fF2wOd6AnO5KYC3rhdw34SVGMnOAzgV4J7m9rOMXR8tcukbIsL4yiY62k9WWdYj1ZfpK1NiHRGAWjDCJP/DrhbHYOV1HL5ekCB7ETHGsLpn7fJphjHZg1iaLoABYrHkVuPva1NH0YurQ7KzVzyutLqpV7XfBaH/dVb94AAAD//zACp3gAAAAGSURBVAMA4gCaW70DCDEAAAAASUVORK5CYII="/>
+</defs>
+</svg>

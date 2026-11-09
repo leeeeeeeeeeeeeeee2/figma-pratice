@@ -1,0 +1,31 @@
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-13) var(--space-16);
+  width: 100%;
+}
+
+.library-grid--general {
+  background: var(--color-white-50);
+}
+
+.library-grid--detail {
+  padding: var(--space-10) var(--space-15);
+  row-gap: var(--space-11);
+  opacity: 0.5;
+}
+
+@media (min-width: 1024px) {
+  .library-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .library-grid--general {
+    column-gap: var(--space-100);
+    width: 71.25%;
+  }
+
+  .library-grid--detail {
+    column-gap: var(--space-35);
+  }
+}

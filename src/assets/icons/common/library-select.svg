@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="&#234;&#178;&#185;&#236;&#185;&#152;&#235;&#138;&#148;&#236;&#149;&#132;&#236;&#157;&#180;&#236;&#189;&#152;&#236;&#132;&#185;&#236;&#133;&#152;">
+<path d="M-259 -319V-318H914V-319V-320H-259V-319ZM916 -317H915V253H916H917V-317H916ZM914 255V254H-259V255V256H914V255ZM-261 253H-260V-317H-261H-262V253H-261ZM-259 255V254C-259.552 254 -260 253.552 -260 253H-261H-262C-262 254.657 -260.657 256 -259 256V255ZM916 253H915C915 253.552 914.552 254 914 254V255V256C915.657 256 917 254.657 917 253H916ZM914 -319V-318C914.552 -318 915 -317.552 915 -317H916H917C917 -318.657 915.657 -320 914 -320V-319ZM-259 -319V-320C-260.657 -320 -262 -318.657 -262 -317H-261H-260C-260 -317.552 -259.552 -318 -259 -318V-319Z" fill="black" fill-opacity="0.1"/>
+<g id="&#235;&#143;&#132;&#236;&#132;&#156;&#234;&#180;&#128;&#236;&#132;&#160;&#237;&#131;&#157;&#236;&#149;&#132;&#236;&#157;&#180;&#236;&#189;&#152;">
+<rect width="23.9844" height="23.9844" fill="url(#pattern0_252_3119)"/>
+</g>
+</g>
+<defs>
+<pattern id="pattern0_252_3119" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_252_3119" transform="scale(0.0416667)"/>
+</pattern>
+<image id="image0_252_3119" data-name="image.png" width="24" height="24" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAxklEQVR4AeyT3Q3DIAyESSfpKO0o3aybJJtkFHKKhGX5IDmUn6cgJwjz4QPLfqWLx30COecxb4+5PBaYzPoXfEqAxvx2fpn1Auv5oTLWjcqvgg4RI4EIHF0/ArsZpBShBMlaUQiEI7Je4B83w3pya5k1AZTcD9+WfYsAIJk1gXL47NkEkD65/XtYE8DN5fbvYb0AzqWE/JKlxiAQjoiSQASOrh+B3QxSilCCZK0oBMIRWS8gtz+CyKwJoMLk9u9hTQC3usQWAAAA///koPoUAAAABklEQVQDAF1g6DEAqw7vAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>

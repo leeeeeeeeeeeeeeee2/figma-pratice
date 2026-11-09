@@ -1,0 +1,200 @@
+.book-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--space-20);
+  padding: var(--space-15) var(--space-20);
+  border: var(--border-width-1) solid var(--color-grey-200);
+  border-radius: var(--radius-5);
+  background: var(--color-white-900);
+  font-family: var(--font-family-pretendard), sans-serif;
+}
+
+.book-card__cover {
+  position: relative;
+  flex: 0 0 auto;
+  filter: drop-shadow(var(--shadow-book-cover));
+}
+
+.book-card__cover .book-cover {
+  border-radius: 0 var(--radius-6) var(--radius-6) 0;
+}
+
+.book-card__spine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.41rem;
+  height: 98.3%;
+  border-right: var(--border-width-150) solid var(--color-book-spine-border);
+  background: linear-gradient(to right, var(--color-book-spine-start), var(--color-book-spine-end));
+}
+
+.book-card__content {
+  flex: 1 1 12rem;
+  min-width: 0;
+}
+
+.book-card__library {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: var(--font-size-15);
+  font-weight: var(--font-weight-medium);
+  color: var(--library-color, var(--color-text-main-text-color));
+}
+
+.book-card__library-mark {
+  flex: 0 0 auto;
+  width: 0.1875rem;
+  height: 0.6875rem;
+  margin-inline: var(--space-3);
+  background: currentColor;
+  transform: rotate(40deg);
+}
+
+.book-card__heading {
+  margin: 0;
+}
+
+.book-card__title {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-family: inherit;
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weight-bold);
+  text-align: left;
+  color: var(--color-search-title);
+  cursor: pointer;
+}
+
+.book-card--ebook .book-card__title {
+  color: var(--color-grey-900);
+}
+
+.book-card__body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--space-8);
+  padding-top: var(--space-15);
+}
+
+.book-card__details {
+  flex: 1 1 12rem;
+  min-width: 0;
+}
+
+.book-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin: 0;
+  font-size: var(--font-size-14);
+}
+
+.book-card__meta div {
+  display: flex;
+  gap: var(--space-3);
+  min-height: 1.125rem;
+  align-items: center;
+}
+
+.book-card__meta dt {
+  flex: 0 0 auto;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-grey-700);
+}
+
+.book-card__meta dd {
+  margin: 0;
+  font-weight: var(--font-weight-light);
+  color: var(--color-text-main-text-color);
+}
+
+.book-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-7);
+  margin: 0;
+  padding: 0 0 var(--space-2);
+  list-style: none;
+}
+
+.book-card__tags li {
+  display: flex;
+  align-items: center;
+  height: 1.375rem;
+  padding: var(--space-8);
+  border-radius: var(--radius-35);
+  background: var(--color-grey-50);
+  font-size: var(--font-size-10);
+  font-weight: var(--font-weight-light);
+  color: var(--color-text-main-text-color);
+  white-space: nowrap;
+}
+
+.book-card__loan {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  width: 6.875rem;
+  min-height: 7.5625rem;
+  padding-top: var(--space-15);
+  border-radius: var(--radius-10);
+  background: var(--color-white-50);
+  text-align: center;
+}
+
+.book-card__loan .loan-status {
+  transform: translateY(var(--space-3));
+}
+
+.book-card__reservation-label {
+  font-weight: var(--font-weight-medium);
+}
+
+.book-card__reservation {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-top: var(--space-9);
+  white-space: nowrap;
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-reservation-text);
+}
+
+.book-card__reserved {
+  margin-left: var(--space-3);
+  color: var(--color-blue-200);
+}
+
+@media (min-width: 1024px) {
+  .book-card {
+    flex-wrap: nowrap;
+    padding-right: 0;
+  }
+
+  .book-card__body {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-right: var(--space-30);
+  }
+
+  .book-card__loan {
+    margin-top: calc(var(--space-13) * -1);
+    margin-right: var(--space-14);
+  }
+
+  .book-card .ebook-link-button {
+    margin-top: calc(var(--space-10) * -1);
+    margin-right: var(--space-7);
+  }
+
+  .book-card--ebook .book-card__tags {
+    padding-top: calc(var(--space-20) + var(--space-2));
+  }
+}

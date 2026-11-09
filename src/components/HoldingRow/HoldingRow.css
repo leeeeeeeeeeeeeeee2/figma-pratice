@@ -1,0 +1,93 @@
+.holding-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  padding: var(--space-8) var(--space-16);
+  border: var(--border-width-1) solid var(--color-grey-200);
+  border-radius: var(--radius-5);
+  background: var(--color-white-900);
+  font-family: var(--font-family-pretendard), sans-serif;
+}
+
+.holding-row__info {
+  display: grid;
+  grid-template-columns: 4.46875rem auto;
+  column-gap: var(--space-9);
+  row-gap: var(--space-8);
+}
+
+.holding-row__status,
+.holding-row__due,
+.holding-row__place {
+  margin: 0;
+  color: var(--color-grey-600);
+  white-space: nowrap;
+}
+
+.holding-row__status {
+  align-self: end;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-semibold);
+}
+
+.holding-row__due {
+  font-size: var(--font-size-15);
+  font-weight: var(--font-weight-medium);
+}
+
+.holding-row__due strong {
+  font-weight: var(--font-weight-bold);
+}
+
+.holding-row__place {
+  grid-column: 1 / span 2;
+  font-size: var(--font-size-15);
+  font-weight: var(--font-weight-medium);
+}
+
+.holding-row__library {
+  margin-right: var(--space-4);
+  font-weight: var(--font-weight-semibold);
+  color: var(--library-color, var(--color-text-main-text-color));
+}
+
+.holding-row__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--space-10);
+}
+
+.holding-row__action {
+  flex: 1 1 0;
+  min-height: 2.1875rem;
+  padding: var(--space-8);
+  border: 0;
+  border-radius: var(--radius-5);
+  background: var(--color-grey-100);
+  font-family: inherit;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-grey-400);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.holding-row__action--loan {
+  min-height: 2.5rem;
+  border: var(--border-width-250) solid var(--color-grey-600);
+  color: var(--color-grey-600);
+}
+
+@media (min-width: 1024px) {
+  .holding-row {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .holding-row__actions {
+    flex-wrap: nowrap;
+    width: 70.79%;
+  }
+}

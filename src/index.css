@@ -1,0 +1,13 @@
+@import './styles/tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-pretendard), sans-serif;
+  background: var(--color-white-900);
+}

@@ -1,0 +1,28 @@
+.library-search {
+  width: 100%;
+  font-family: var(--font-family-pretendard), sans-serif;
+}
+
+.library-search__heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-10);
+  margin: 0;
+  font-size: var(--font-size-22);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-grey-900);
+}
+
+.library-search__heading img {
+  flex: 0 0 auto;
+  width: 1.75rem;
+  height: auto;
+}
+
+.library-search__tabs {
+  padding-top: var(--space-14);
+}
+
+.library-search__detail {
+  padding-top: var(--space-14);
+}

@@ -1,0 +1,9 @@
+.mobile-icon {
+  display: block;
+  flex: 0 0 auto;
+}
+
+.mobile-icon--logo {
+  width: 8.75rem;
+  height: auto;
+}

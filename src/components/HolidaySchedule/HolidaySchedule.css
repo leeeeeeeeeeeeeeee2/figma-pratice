@@ -1,0 +1,117 @@
+.holiday {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-14);
+  padding: var(--space-10) var(--space-30) var(--space-17) var(--space-10);
+  font-family: var(--font-family-nanum), sans-serif;
+}
+
+.holiday .home-section-header {
+  min-height: 2.5rem;
+}
+
+.holiday__month {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.holiday__month-label {
+  font-size: var(--font-size-number-strong);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-700);
+}
+
+.holiday__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.holiday__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 32.125rem;
+  padding: var(--space-30);
+  border: var(--border-width-150) solid var(--color-grey-200);
+  border-radius: var(--radius-30);
+  overflow: hidden;
+}
+
+.holiday__illustration {
+  position: absolute;
+  top: 54.12%;
+  left: 5%;
+  width: 90%;
+  height: 39.86%;
+}
+
+.holiday__select {
+  position: relative;
+  width: 77%;
+  min-width: 12rem;
+  height: 2.87375rem;
+  padding: 0 var(--space-30) 0 var(--space-10);
+  border: 0;
+  border-radius: var(--radius-30);
+  background: var(--color-white-50) url('../../assets/icons/mobile/holiday-arrow.png') no-repeat right var(--space-24) center;
+  font-family: inherit;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-main-text-color);
+  appearance: none;
+  cursor: pointer;
+}
+
+.holiday__dates {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  gap: var(--space-6);
+  width: 77%;
+  min-width: 12rem;
+  min-height: 13.74875rem;
+  margin: 0;
+  padding: var(--space-20) 0;
+  list-style: none;
+}
+
+.holiday__dates li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: var(--radius-26);
+  background: var(--color-blue-10);
+  font-size: var(--font-size-number-strong);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-main-text-color);
+}
+
+.holiday__unknown {
+  position: relative;
+  min-height: 13.74875rem;
+  margin: 0;
+  padding: var(--space-20) var(--space-10);
+  font-size: var(--font-size-16);
+  color: var(--color-text-main-text-color);
+}
+
+.holiday__message {
+  position: relative;
+  margin: 0;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-main-text-color);
+}

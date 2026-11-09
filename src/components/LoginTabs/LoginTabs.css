@@ -1,0 +1,10 @@
+.login-tabs {
+  display: flex;
+  width: 100%;
+  max-width: 23.646rem;
+}
+
+.login-tabs .login-button {
+  flex: 1 1 0;
+  max-width: none;
+}
